@@ -2,7 +2,7 @@
 
 ```bash
 # Install dependencies
-yarn
+yarn install
 # Test the app
 yarn dev
 # Pack the app
