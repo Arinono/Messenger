@@ -1,0 +1,25 @@
+{
+  "name": "Messenger",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "A desktop version of Messenger",
+  "author": "Aurelien ARINO",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^1.7.5",
+    "electron-builder": "^19.24.1"
+  },
+  "build": {
+    "appId": "xyz.aurelien-arino",
+    "mac": {
+      "category": "xyz.aurelien-arino.messenger-desktop"
+    }
+  },
+  "scripts": {
+    "dev": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  }
+}

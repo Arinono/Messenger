@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Messenger</title>
+    </head>
+    <body>
+        <webview id="foo" src="https://www.messenger.com/" style="display:inline-flex; width:calc(100vw - 20px); height:calc(100vh - 20px)"></webview>
+        <script>
+            onload = () => {
+                const webview = document.querySelector('webview')
+                const indicator = document.querySelector('.indicator')
+
+                const loadstart = () => {
+                    indicator.innerText = 'loading...'
+                }
+
+                const loadstop = () => {
+                    indicator.innerText = ''
+                }
+
+                webview.addEventListener('did-start-loading', loadstart)
+                webview.addEventListener('did-stop-loading', loadstop)
+            }
+        </script>
+    </body>
+</html>
