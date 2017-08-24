@@ -1,4 +1,7 @@
-/dist
+/dist/github
+/dist/mac
+/dist/latest-mac.yml
+/dist/Messenger-1.0.0-mac.zip
 .idea
 .DS_Store
 /node_modules
